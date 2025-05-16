@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppins';
+  height: 100%;
+  width: 100%;
+  
+}
+
+nav {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  border: 2px solid black;
+  flex-direction: row;
+}
+
+nav span {
+  position: absolute;
+  left: 50px;
+}
+
+nav span img {
+  width: 74px;
+  height: 74px;
+}
+
+nav ul {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  right: 50px;
+}
+
+nav ul li {
+  list-style: none;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  width: 100vw;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.main-left {
+  Position: absolute;
+  right: 100px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-right {
+  padding: 80px;
+}
+
+.main-right div:nth-child(1),
+.main-right div:nth-child(2) {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.main-right div:nth-child(3) {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.main-right .btn-1 {
+  padding: 25px;
+}
+
+.main-right .btn-1 button {
+  padding: 8px 10px;
+  font-size: 1.2em;
+  background-color: #FFFFFF;
+}
+
+.btn-1 button a {
+  text-decoration: none;
+  color: black;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.about-left {
+  width: 40vw;
+  padding: 40px;
+}
+
+.about-left h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.about-left p {
+  line-height: 25px;
+}
+
+.about-left .lang {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  
+}
+
+.about-left ul {
+  margin-left: 30px;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  padding: 40px;
+}
+
+.about-right .about-img img {
+  width: 120px;
+  height: 120px;
+  margin: 50px 20px;
+}
+
+.about-right .tech {
+  margin: 50px 20px;
+}
+
+.about-right .tech ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.about-right .tech ul li {
+  font-size: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  border: 1px solid black;
+  padding: 60px;
+}
+
+.project h2 {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.all-projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.project-card {
+  width: 250px;
+  padding: 20px;
+  margin: 0 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  height: auto;
+  width: 100px;
+  border: 2px solid black;
+  box-shadow: 4px 4px 2px black;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  padding: 60px ;
+  width: 100%;
+  height: 600px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.Contact h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.Contact form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 100px;
+  padding: 15px;
+  border:1px solid black;
+  border-radius: 7px;
+  margin: 20px 10px ;
+}
+form input,
+form textarea{
+  margin:20px;
+  padding: 5px 20px;
+  border:1px solid black;
+}
+footer{
+  display:flex;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  margin-top: 170px;
+  color: #555;
+}
+footer .plateforms{
+  display:flex;
+  flex-direction: column;
+  margin-top: 190px;
+}
+.plateforms a {
+  margin: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.plateforms i {
+  margin-right: 8px;
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    position: fixed; /* fixed navbar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    background-color: white; /* avoid transparency */
+    z-index: 1000;
+  }
+
+  nav span {
+    position: static;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* center logo */
+  }
+
+  nav ul {
+    position: static;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .main {
+    margin-top: 100px;
+    display: flex; /* flex container for centering */
+    flex-direction: column;
+    height: auto;
+    padding: 120px 20px 20px; /* padding top to avoid overlap with fixed nav */
+    align-items: center; /* center content horizontally */
+  }
+
+  .main-left {
+    position: static;
+    margin-bottom: 20px; /* spacing below profile image */
+  }
+
+  .circle {
+    margin: 0 auto; /* center profile image */
+  }
+
+  .main-right {
+    position: static;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .about-left, .about-right {
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .about-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-right .about-img img {
+    margin: 20px 0;
+  }
+
+  .project {
+    height: auto;
+    padding: 20px;
+  }
+
+  .all-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    margin: 20px 0;
+    width: 80%;
+  }
+
+  .Contact {
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plateforms {
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .Contact form {
+    position: static;
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    margin-top: 40px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-right div:nth-child(1),
+  .main-right div:nth-child(2) {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .main-right div:nth-child(3) {
+    font-size: 22px;
+  }
+
+  .about-left h2,
+  .Contact h2,
+  .project h2 {
+    font-size: 28px;
+  }
+
+  .about-left .lang {
+    font-size: 20px;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .main-right .btn-1 button {
+    font-size: 1em;
+    padding: 6px 10px;
+  }
+}
